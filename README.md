@@ -1,61 +1,27 @@
-# Product Portfolio Website
+# Prem Sameer — Product, AI & Growth
 
-## Overview
-This project is a product portfolio website designed to showcase a collection of products. It features a clean and modern design, optimized for speed and ease of use. The website is built using the latest frontend technologies, ensuring a responsive and aesthetically pleasing user experience.
+Portfolio based on Prem Sameer's supplied Notion content. Six featured explorations and eight linked work stories. Built with Next.js, shadcn/ui, Motion Primitives and a custom Lottie-format animation.
 
-## Project Structure
-The project is organized as follows:
+## Run
 
-```
-product-portfolio-website
-├── public
-│   ├── index.html          # Main entry point of the website
-│   ├── home.html           # Home page showcasing the portfolio's introduction
-│   ├── products.html       # Page listing all available products
-│   ├── product-details.html # Detailed information about a specific product
-│   └── contact.html        # Contact form and information
-├── src
-│   ├── css
-│   │   ├── styles.css      # Main styles for the website
-│   │   └── themes.css      # Additional styles for themes
-│   ├── js
-│   │   ├── app.js          # Main JavaScript file for application logic
-│   │   └── utils.js        # Utility functions for the application
-│   └── assets
-│       └── fonts           # Custom font files
-├── package.json            # npm configuration file
-├── README.md               # Project documentation
-└── .gitignore              # Files and directories to ignore in version control
-```
+Node 22.13 or newer. Run `npm ci`, then `npx next dev --port 5173`. Run `npm run build` to produce the static `out/` folder.
 
-## Features
-- **Responsive Design**: The website is fully responsive and works seamlessly on various devices.
-- **Dynamic Content**: JavaScript is used to manage dynamic content loading and user interactions.
-- **Custom Fonts**: The project includes custom fonts to enhance typography.
-- **Easy Customization**: The themes.css file allows for easy customization of styles.
+## Deploy
 
-## Setup Instructions
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd product-portfolio-website
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Open the `public/index.html` file in your browser to view the website.
+Import this branch into Vercel. The checked-in vercel.json configures the build and output. No secrets or environment variables are required. For another static host, upload the contents of out/.
 
-## Usage
-- Navigate through the website using the links provided on the Home page.
-- View product details by clicking on the product links in the products list.
-- Use the contact form to reach out for inquiries or feedback.
+## Content
 
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
+Edit app/page.tsx for portfolio content and links. Edit app/globals.css for the palette and layout. Work-study metrics come from the supplied Notion pages; targets and unknown placeholders are not represented as achieved results. The SEO card links to its original Notion section because its bookmark destination was unavailable.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Design resources
+
+- shadcn/ui: button primitive, restyled for this portfolio.
+- Motion Primitives: AnimatedGroup pattern adapted for project entrances and reduced motion (https://motion-primitives.com/docs/animated-group).
+- LottieFiles: format reference; animation is original geometric motion, rendered with lottie-react, not a downloaded LottieFiles asset.
+- Haikei: abstract geometric background inspiration; card backgrounds are original CSS contours, not exported Haikei assets.
+- Realtime Colors: role-based palette approach, charcoal #151716, text #f5f6ef, accent #d9ff70. Palette preview: https://www.realtimecolors.com/?colors=f5f6ef-151716-d9ff70-beead5-b6a1f1
+- Godly.design: editorial typography and portfolio layout reference. No third-party site design or artwork was copied.
+- Manus: reviewed as a separate AI building service; no authenticated Manus workspace was available or used.
+
+Original portfolio: https://premsameer1405.notion.site/Prem-Sameer-PM-Portfolio-34b0733b4c2481048787ecc1ee5aeec5
