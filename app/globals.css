@@ -117,6 +117,19 @@ h2 { font-size: clamp(2.6rem, 4.4vw, 4rem); margin: 8px 0 20px; }
 footer { padding-top: 140px; }
 .contact-title { display: block; position: relative; font-size: clamp(4rem,5.6vw,5rem); margin: 8px 0 40px; max-width: 700px; transition: color 200ms ease-out; }
 .contact-title:hover { color: var(--primary); }
+.sound-toggle { position: fixed; right: 24px; bottom: 22px; z-index: 8; border: 1px solid #cfc8bd; border-radius: 999px; background: #f7f5f2ee; color: var(--foreground); padding: 9px 14px; font: 500 .7rem var(--body); letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+.sound-toggle span { color: var(--primary); margin-left: 5px; }
+.project-art { overflow: hidden; }
+.project-art::after { transition: opacity .4s ease; }
+.project-grid > div:nth-child(1) .project-art { background: radial-gradient(circle at 72% 32%, #d6b98d 0 12%, transparent 12.5%), radial-gradient(circle at 42% 72%, #b4c0a7 0 18%, transparent 18.5%), #ece4d7; }
+.project-grid > div:nth-child(2) .project-art { background: linear-gradient(145deg, #ded2c2 0 38%, #b88c70 38% 62%, #e8dfd3 62%); }
+.project-grid > div:nth-child(3) .project-art { background: radial-gradient(ellipse at 50% 40%, #d5b67d 0 15%, transparent 15.5%), radial-gradient(ellipse at 50% 70%, #7a8c77 0 24%, transparent 24.5%), #dcd8ca; }
+.project-grid > div:nth-child(4) .project-art { background: conic-gradient(from 20deg at 60% 45%, #d0b4a5, #a5b1a1, #e2d1bc, #d0b4a5); }
+.project-grid > div:nth-child(5) .project-art { background: linear-gradient(165deg, #c4cbc1, #d9c6ad 48%, #a9b5a5); }
+.project-grid > div:nth-child(6) .project-art { background: radial-gradient(ellipse at 30% 35%, #b9836b 0 16%, transparent 16.5%), radial-gradient(ellipse at 75% 70%, #cabca6 0 23%, transparent 23.5%), #e3ddd3; }
+.project-art .art-word { position: relative; z-index: 1; }
+.about::before { content: ""; display: block; height: 1px; background: #9a5b43; opacity: .75; margin-bottom: 80px; }
+@media (max-width: 640px) { .sound-toggle { right: 14px; bottom: 14px; } }
 .contact-title > svg { width: 40px; height: 40px; position: absolute; right: 0; bottom: 6px; }
 .contact-details { display: flex; flex-wrap: wrap; gap: 28px; font-size: 1rem; }
 .contact-details span { color: var(--muted-foreground); }
