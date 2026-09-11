@@ -1,1 +1,1 @@
-{"buildCommand":"npm run build:vercel","outputDirectory":"out","framework":null,"installCommand":"npm ci"}
+{"buildCommand":"npm run build:vercel","outputDirectory":"out","framework":null,"installCommand":"npm ci","rewrites":[{"source":"/work/:id","destination":"/work/:id.html"}]}
