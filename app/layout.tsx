@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import "@fontsource-variable/newsreader";
+import "@fontsource-variable/newsreader/wght-italic.css";
+import "@fontsource-variable/source-sans-3";
 import "./globals.css";
 
 export const metadata: Metadata = {

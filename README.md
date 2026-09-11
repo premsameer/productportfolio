@@ -1,27 +1,15 @@
 # Prem Sameer — Product, AI & Growth
 
-Portfolio based on Prem Sameer's supplied Notion content. Six featured explorations and eight linked work stories. Built with Next.js, shadcn/ui, Motion Primitives and a custom Lottie-format animation.
+A warm editorial portfolio built with Next.js, shadcn/ui and Motion. Cream surfaces, a restrained sage accent, self-hosted Newsreader and Source Sans 3, slow mesh gradients, and reduced-motion support.
 
-## Run
+## Run and deploy
 
-Node 22.13 or newer. Run `npm ci`, then `npx next dev --port 5173`. Run `npm run build` to produce the static `out/` folder.
-
-## Deploy
-
-Import this branch into Vercel. The checked-in vercel.json configures the build and output. No secrets or environment variables are required. For another static host, upload the contents of out/.
+Use Node 22.13 or newer. Run `npm ci`, `npx next dev --port 5173`, or `npm run build`. The production build exports static pages to `out/`. Vercel configuration uses static hosting with no environment variables required.
 
 ## Content
 
-Edit app/page.tsx for portfolio content and links. Edit app/globals.css for the palette and layout. Work-study metrics come from the supplied Notion pages; targets and unknown placeholders are not represented as achieved results. The SEO card links to its original Notion section because its bookmark destination was unavailable.
+Homepage content lives in `app/page.tsx`; the design system lives in `app/globals.css`. Nine native case-study routes are generated from `lib/case-studies.json`, including the full available text and tables from eight supplied Notion pages. The SEO project uses the available portfolio summary and links to its source repository. Unknown metrics are not presented as results.
 
-## Design resources
+## Design references
 
-- shadcn/ui: button primitive, restyled for this portfolio.
-- Motion Primitives: AnimatedGroup pattern adapted for project entrances and reduced motion (https://motion-primitives.com/docs/animated-group).
-- LottieFiles: format reference; animation is original geometric motion, rendered with lottie-react, not a downloaded LottieFiles asset.
-- Haikei: abstract geometric background inspiration; card backgrounds are original CSS contours, not exported Haikei assets.
-- Realtime Colors: role-based palette approach, charcoal #151716, text #f5f6ef, accent #d9ff70. Palette preview: https://www.realtimecolors.com/?colors=f5f6ef-151716-d9ff70-beead5-b6a1f1
-- Godly.design: editorial typography and portfolio layout reference. No third-party site design or artwork was copied.
-- Manus: reviewed as a separate AI building service; no authenticated Manus workspace was available or used.
-
-Original portfolio: https://premsameer1405.notion.site/Prem-Sameer-PM-Portfolio-34b0733b4c2481048787ecc1ee5aeec5
+The current design follows the owner's warm editorial brief. shadcn/ui supplies the button primitive; the AnimatedGroup pattern from Motion Primitives is adapted for restrained entrances. Organic CSS contours reflect the Haikei reference. Lottie is retained as an unused earlier experiment. No third-party artwork is copied. Manus was not used because no authenticated workspace was available.

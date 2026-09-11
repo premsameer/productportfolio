@@ -1,1 +1,1 @@
-{"buildCommand":"npm run build:vercel","outputDirectory":"out","framework":"nextjs","installCommand":"npm ci"}
+{"buildCommand":"npm run build:vercel","outputDirectory":"out","framework":null,"installCommand":"npm ci"}
